@@ -1,0 +1,50 @@
+
+### 메서드란?
+컴퓨터에게 어떠한 과정을 요구하는것!!!!
+
+### 메서드 구조
+```
+1. 반환값
+2. 이름
+3. 파라미터
+
+반환값 이름(파라미터) {
+    return 반환값
+}
+```
+
+### 메서드 반환값이 없을때
+void
+
+### 다운님이 직접 작성한 코드들
+```
+public class Calculator {
+
+    public static void main(String[] args) {
+        Calculator cal = new Calculator();
+
+        int 더하기결과 = cal.더하기(15,12312314);;
+        int 빼기결과 = cal.빼기(100,20);
+        System.out.println(빼기결과);
+        cal.say_hello();
+    }
+
+    int 더하기(int 숫자1, int 숫자2){
+        int 결과;
+        결과 = 숫자1 + 숫자2;
+        return 결과;
+    }
+
+    int 빼기(int 숫자1, int 숫자2){
+        int 결과;
+        결과 = 숫자1 - 숫자2;
+        return 결과;
+    }
+
+    void say_hello() {
+        String 결과;
+        결과 = "say_hello";
+        System.out.println(결과);
+    }
+}
+```
